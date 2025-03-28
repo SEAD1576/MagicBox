@@ -1,0 +1,45 @@
+body {
+  background-color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.grid div {
+  width: 100px;
+  height: 100px;
+  background-color: white; /* Initially white */
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.reset-button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reset-button:hover {
+  background-color: #e64a19;
+}
